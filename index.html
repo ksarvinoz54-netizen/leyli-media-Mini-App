@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leyli Media</title>
+
+  <!-- Telegram Mini App -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f0f12;
+      color: white;
+      min-height: 100vh;
+    }
+
+    .app {
+      max-width: 480px;
+      margin: auto;
+      padding: 24px 18px 40px;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #8b5cf6, #ec4899);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #a1a1aa;
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      background: #18181d;
+      border: 1px solid #292930;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+
+    .card h2 {
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #a1a1aa;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 16px;
+      padding: 17px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    }
+
+    button.secondary {
+      background: #202027;
+      border: 1px solid #30303a;
+    }
+
+    .footer {
+      text-align: center;
+      color: #71717a;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="logo">LM</div>
+
+    <h1>Leyli Media</h1>
+
+    <p class="subtitle">
+      Professional media, SMM va kreativ xizmatlar.
+      Leyli Media Mini App'ga xush kelibsiz.
+    </p>
+
+    <div class="card">
+      <h2>🎬 Video & Mobileography</h2>
+      <p>
+        Reels, video suratga olish, montaj va kreativ kontent.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>📱 SMM</h2>
+      <p>
+        Instagram, Telegram va biznes uchun professional kontent.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>✨ Premium</h2>
+      <p>
+        Maxsus premium kontent va Leyli Media xizmatlari.
+      </p>
+    </div>
+
+    <div class="buttons">
+
+      <button onclick="services()">
+        📋 Xizmatlar
+      </button>
+
+      <button class="secondary" onclick="portfolio()">
+        🎨 Portfolio
+      </button>
+
+      <button class="secondary" onclick="contact()">
+        📞 Bog‘lanish
+      </button>
+
+    </div>
+
+    <div class="footer">
+      © 2026 Leyli Media
+    </div>
+
+  </div>
+
+  <script>
+
+    // Telegram Mini App
+    const tg = window.Telegram.WebApp;
+
+    tg.ready();
+    tg.expand();
+
+    function services() {
+      tg.showAlert(
+        "Leyli Media xizmatlari:\n\n" +
+        "🎬 Mobileography\n" +
+        "🎥 Videography\n" +
+        "📱 SMM\n" +
+        "🎨 Content creation\n" +
+        "✨ Premium xizmatlar"
+      );
+    }
+
+    function portfolio() {
+      tg.showAlert(
+        "Portfolio bo‘limi tez orada qo‘shiladi."
+      );
+    }
+
+    function contact() {
+      tg.openTelegramLink(
+        "https://t.me/LeyliMedia_bot"
+      );
+    }
+
+  </script>
+
+</body>
+</html>
