@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leyli Media — Studio</title>
+
+    <meta name="description" content="Leyli Media — SMM, audio studio va vokal maktabi.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at top, #2a210f 0%, #090909 38%, #000000 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 35px 20px 40px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 25px;
+            filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.25));
+        }
+
+        .title {
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 38px;
+            color: #d4af37;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #cfcfcf;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .gold-line {
+            width: 70px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            margin: 0 auto 30px;
+        }
+
+        .service {
+            display: block;
+            text-decoration: none;
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(212, 175, 55, 0.13),
+                    rgba(255,255,255,0.035)
+                );
+
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 18px;
+
+            padding: 20px;
+            margin-bottom: 15px;
+
+            transition: all 0.25s ease;
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,0.35);
+        }
+
+        .service:hover {
+            transform: translateY(-3px);
+            border-color: #d4af37;
+
+            box-shadow:
+                0 10px 35px rgba(212,175,55,0.18);
+        }
+
+        .service-title {
+            color: #d4af37;
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .service-text {
+            color: #bdbdbd;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .premium {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(212, 175, 55, 0.28),
+                    rgba(80, 60, 15, 0.15)
+                );
+
+            border-color: rgba(212, 175, 55, 0.7);
+        }
+
+        .contact {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+
+            background: linear-gradient(
+                135deg,
+                #d4af37,
+                #f1d67a,
+                #b88918
+            );
+
+            color: #080808;
+
+            font-weight: 800;
+            font-size: 17px;
+
+            padding: 17px 20px;
+            border-radius: 16px;
+
+            margin-top: 25px;
+
+            box-shadow:
+                0 10px 30px rgba(212,175,55,0.25);
+
+            transition: all 0.25s ease;
+        }
+
+        .contact:hover {
+            transform: translateY(-3px);
+            box-shadow:
+                0 15px 40px rgba(212,175,55,0.35);
+        }
+
+        .phone {
+            text-align: center;
+            color: #d4af37;
+            font-size: 14px;
+            margin-top: 13px;
+        }
+
+        footer {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 35px;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 25px 15px 30px;
+            }
+
+            .logo {
+                width: 125px;
+                height: 125px;
+            }
+
+            .title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- LEYLI MEDIA LOGO -->
+        <img
+            src="logo.png"
+            alt="Leyli Media Logo"
+            class="logo"
+        >
+
+        <h1 class="title">Leyli Media</h1>
+
+        <p class="subtitle">
+            Professional studio, SMM va kreativ xizmatlar.<br>
+            Leyli Media'ga xush kelibsiz.
+        </p>
+
+        <div class="gold-line"></div>
+
+
+        <!-- SMM -->
+        <a
+            href="https://wa.me/998996676688?text=Assalomu%20alaykum%2C%20Leyli%20Media%20SMM%20xizmatlari%20haqida%20ma%27lumot%20olmoqchiman."
+            class="service"
+            target="_blank"
+        >
+            <div class="service-title">
+                📱 SMM
+            </div>
+
+            <div class="service-text">
+                Instagram va Telegram uchun professional
+                kontent, sahifa yuritish va rivojlantirish.
+            </div>
+        </a>
+
+
+        <!-- AUDIO STUDIO -->
+        <a
+            href="https://wa.me/998996676688?text=Assalomu%20alaykum%2C%20Leyli%20Media%20studio%20xizmatlari%20haqida%20ma%27lumot%20olmoqchiman."
+            class="service"
+            target="_blank"
+        >
+            <div class="service-title">
+                🎙️ Audio Studio
+            </div>
+
+            <div class="service-text">
+                Professional ovoz yozish va qo‘shiq yaratish
+                uchun studio xizmatlari.
+            </div>
+        </a>
+
+
+        <!-- VOCAL SCHOOL -->
+        <a
+            href="https://wa.me/998996676688?text=Assalomu%20alaykum%2C%20vokal%20maktabi%20haqida%20ma%27lumot%20olmoqchiman."
+            class="service"
+            target="_blank"
+        >
+            <div class="service-title">
+                🎤 Vokal maktabi
+            </div>
+
+            <div class="service-text">
+                Qo‘shiq kuylash, ovoz ustida ishlash va
+                vokal mashg‘ulotlari.
+            </div>
+        </a>
+
+
+        <!-- PREMIUM -->
+        <a
+            href="https://wa.me/998996676688?text=Assalomu%20alaykum%2C%20Leyli%20Media%20Premium%20xizmatlari%20haqida%20ma%27lumot%20olmoqchiman."
+            class="service premium"
+            target="_blank"
+        >
+            <div class="service-title">
+                ✨ Premium
+            </div>
+
+            <div class="service-text">
+                Maxsus individual xizmatlar va
+                Leyli Media premium yechimlari.
+            </div>
+        </a>
+
+
+        <!-- CONTACT -->
+        <a
+            href="https://wa.me/998996676688"
+            class="contact"
+            target="_blank"
+        >
+            💬 Bog‘lanish
+        </a>
+
+        <div class="phone">
+            +998 99 667 66 88
+        </div>
+
+        <footer>
+            © 2026 Leyli Media. Barcha huquqlar himoyalangan.
+        </footer>
+
+    </main>
+
+</body>
+</html>
